@@ -97,8 +97,11 @@ img {
 
 header {
   width:270px;
+  padding-right:320px;
   float:left;
   position:fixed;
+  text-align: center;
+   
 }
 
 header ul {
@@ -180,7 +183,8 @@ footer {
   width:270px;
   float:left;
   position:fixed;
-  bottom:50px;
+  bottom:14px;
+  text-align: center;
 }
 
 @media print, screen and (max-width: 960px) {
@@ -194,10 +198,6 @@ footer {
     float:none;
     position:static;
     width:auto;
-  }
-  
-  header {
-    padding-right:320px;
   }
   
   section {
