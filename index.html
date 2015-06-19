@@ -43,6 +43,11 @@ This plugin adds custom space for making content center either according to root
     <p>Include <a href="http://tenbullstech.github.io/jquery-make-me-center">jquery.makemecenter.js</a> after the main jquery js files</p>
     <h3>Options Provided in Plugins</h3>
       <ul>
+<li><strong>position</strong>  <code>absolute|fixed|static</code><br>
+
+<ul>
+<li>Sepecify the element position <strong>default value:</strong> <code>absolute</code></li>
+</ul></li>
 <li><strong>horizontal</strong>  <code>true|false</code><br>
 
 <ul>
@@ -98,6 +103,22 @@ This plugin adds custom space for making content center either according to root
 <ul>
 <li>Define Margin from Bottom on element <strong>default value:</strong> <code>0</code></li>
 </ul></li>
+<li><strong>is_onload</strong>
+
+<ul>
+<li>Center Element on Page Load <strong>default value:</strong> <code>true</code></li>
+</ul></li>
+<li><strong>is_onresize</strong>
+
+<ul>
+<li>Center Element on Resize<strong>default value:</strong> <code>true</code></li>
+</ul></li>
+<li><strong>is_animate</strong>
+
+<ul>
+<li>Animate Element while Centering it<strong>default value:</strong> <code>false</code></li>
+</ul></li>
+
 </ul>
     <h3>Easy to Use</h3>
         <h4>To make element center vertically and horizontally simple use</h4>
@@ -108,14 +129,17 @@ This plugin adds custom space for making content center either according to root
     <h4>All options at a glance</h4>
         <pre><code>
           $("div.box").makemecenter({
-            vertical:true,
-            horizontal:true,
-            marginLeft:10,
+            vertical: true,
+            horizontal: true,
+            marginLeft: 10,
             marginRight: 10,
             paddingLeft: 10,
             paddingRight: 10,
             paddingTop: 10,
-            paddingBottom: 10
+            paddingBottom: 10,
+            is_onload: true,  
+            is_onresize: true,  
+            is_animate: false,  
           });
         </code></pre>
 
@@ -125,6 +149,9 @@ This plugin adds custom space for making content center either according to root
           <li><a href="demo/demo2.html">Center Horizontal Only - Default</a></li>
           <li><a href="demo/demo3.html">Center Vertical Only - Default</a></li>
           <li><a href="demo/demo4.html">Center Vertical & Horizontal With Margin & Padding- Default</a></li>
+          <li><a href="demo/demo5.html">Center Element on Page Load</a></li>
+          <li><a href="demo/demo6.html">Center Element on Resize</a></li>
+          <li><a href="demo/demo7.html">Animate Element while Centering it</a></li>
       </ul>
 <p>
 If reading the above documentation then it easy to make center an element,content with the use of this plugin <a href="http://tenbullstech.github.io/jquery-make-me-center">make me center</a> easy to add margin,padding for creating content beautiful.</p>

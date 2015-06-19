@@ -153,7 +153,6 @@ header ul li + li {
 
 header ul li + li + li {
   border-right:none;
-  width:89px;
 }
 
 header ul a strong {
