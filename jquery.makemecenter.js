@@ -11,7 +11,15 @@
 	 ** If you found bug, please contact me via email <tenbulls007@gmail.com>
  */
 
-(function($){
+(function(factory) {
+    if (typeof define === 'function' && define.amd) {
+        define(['jquery'], factory);
+    } else if (typeof exports !== 'undefined') {
+        module.exports = factory(require('jquery'));
+    } else {
+        factory(jQuery);
+    }
+}(function($){
 	$.fn.makemecenter = function(options) {
 		var settings = $.extend({
 			position : "absolute",
@@ -193,4 +201,4 @@
 
 	
 
-}(jQuery))
+}));
